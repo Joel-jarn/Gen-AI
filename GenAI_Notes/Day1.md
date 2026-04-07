@@ -16,5 +16,5 @@ When you listen to a friend in a crowded room, your brain "attends" to their voi
 ## The guessing game of Tokens
 To an AI, words are like Lego bricks called "tokens." The AI is essentially playing a very high-level game of "guess the next word." If I say "The cat sat on the...", your brain probably jumps to the word "mat" or "floor." The AI does this mathematically. It looks at the words you've already given it and calculates the most likely next "brick" to add to the pile. It does this over and over, one tiny piece at a time, until it has built a full response. It isn't "thinking" in the human sense; it’s just picking the most probable next step.
 
-### Why the AI sometimes lies
+## Why the AI sometimes lies
 Since the AI is just a giant guessing machine, it can sometimes get a bit too creative. This is what we call a "hallucination." Think of it like a person who is so eager to help that they start making things up just to keep the conversation going. Because the AI is focused on what word sounds like it should come next, it might accidentally invent a fake fact or a made-up name because it fits the pattern of the sentence perfectly. It prioritizes sounding natural over being 100% factually accurate, which is why we always have to double-check its work.
