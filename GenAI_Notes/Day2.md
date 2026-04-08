@@ -1,4 +1,4 @@
-Based on the presentation slides, here are your structured notes on **Prompt Engineering and AI Behavior**.
+
 
 ---
 
