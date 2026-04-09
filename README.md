@@ -10,7 +10,9 @@
 
   - [x] **Day 1:** Introduction to ML vs. Gen AI & the Transformer Concept.
   - [x] **Day 2:** Deep dive into Prompt Engineering: "Prompts as Code" and Structured Outputs.
-  - [ ] **Day 3:** (Awaiting update...)
+  - [x] **Day 3:** Reiterated previous concepts.
+  - [ ] **Day 4:** (Awaiting update...)
+  - [ ] 
 
 -----
 
