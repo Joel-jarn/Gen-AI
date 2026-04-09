@@ -12,7 +12,7 @@
   - [x] **Day 2:** Deep dive into Prompt Engineering: "Prompts as Code" and Structured Outputs.
   - [x] **Day 3:** Reiterated previous concepts.
   - [ ] **Day 4:** (Awaiting update...)
-  - [ ] 
+  - [ ] **Day 5:
 
 -----
 
