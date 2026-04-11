@@ -1,39 +1,37 @@
-# Internship Project: RAG-Based Learning Assistant
+# Internship Project: Multi-Agent PRD/Memo Generator
 
-## Week 1: Ingestion Pipeline & Vector Database Setup
-- [ ] **Project Initialization**
-    - [ ] Initialize GitHub repository with a clean `.gitignore`.
-    - [ ] Set up FastAPI project structure and `.env` file for API keys.
-- [ ] **Data Ingestion Script**
-    - [ ] Implement PDF parsing using `PyPDF2`.
-    - [ ] Configure `RecursiveCharacterTextSplitter` for optimal text chunking.
-- [ ] **Vector Database Integration**
-    - [ ] Generate embeddings via OpenAI embedding models.
-    - [ ] Set up and upsert vectors into Pinecone or ChromaDB.
+## Week 1: Prompt Engineering & System Prompts
+- [ ] **Architecture Design**
+    - [ ] Define the system architecture for the dual-agent workflow.
+- [ ] **Agent Persona Development**
+    - [ ] Design strict system prompts for **The Writer** (Generation).
+    - [ ] Design strict system prompts for **The Critic** (Evaluation).
+- [ ] **Prompt Optimization**
+    - [ ] Implement **few-shot prompting** with high-quality PRD/Memo examples.
+    - [ ] Test and validate basic API calls and tone consistency in Jupyter Notebooks.
 
-## Week 2: Retrieval-Augmented Generation (RAG) Implementation
-- [ ] **Retrieval Logic**
-    - [ ] Build the retrieval endpoint in FastAPI.
-    - [ ] Implement query embedding and Top-K similarity search.
-- [ ] **Prompt Engineering & Completion**
-    - [ ] Construct a strict "Expert Tutor" prompt template.
-    - [ ] Integrate the LLM to generate responses based *only* on retrieved context.
-- [ ] **Citations**
-    - [ ] Ensure the API returns source document citations alongside the response.
+## Week 2: Implementing the Multi-Agent Graph
+- [ ] **Workflow Orchestration**
+    - [ ] Set up the state management using **LangGraph** (or CrewAI).
+- [ ] **Node & Edge Logic**
+    - [ ] Code the **Writer Node** for document generation.
+    - [ ] Code the **Critic Node** for document evaluation.
+- [ ] **Conditional Routing**
+    - [ ] Implement a conditional edge to loop the process if the Critic's score is below the threshold.
 
-## Week 3: Conversational Memory & Adaptive Quizzes
-- [ ] **Session Management**
-    - [ ] Implement `ConversationBufferMemory` for multi-turn dialogue.
-    - [ ] Ensure the system maintains context across a single session.
-- [ ] **Structured Output Generation**
-    - [ ] Create a dedicated endpoint for quiz generation.
-    - [ ] Use LLM structured output (JSON) to generate 5 multiple-choice questions per topic.
+## Week 3: Structured Output & Tool Calling
+- [ ] **Robust Data Extraction**
+    - [ ] Implement **Function Calling/Tool Use** for agent communication.
+- [ ] **JSON Schema Enforcement**
+    - [ ] Force the LLM to output reviews in a strict JSON format (e.g., `status`, `feedback`).
+    - [ ] Test parsing logic to ensure the backend handles outputs without regex errors.
 
-## Week 4: UI Integration, Streaming, & Evaluation
-- [ ] **Frontend & UX**
-    - [ ] Wire the FastAPI backend to the chat-based UI.
-    - [ ] Implement Server-Sent Events (SSE) for real-time token streaming.
-- [ ] **Finalization & Security**
-    - [ ] Secure all sensitive credentials in the `.env` file.
-    - [ ] Complete the `README.md` with a detailed RAG architecture diagram.
-    - [ ] Perform final repository cleanup and documentation.
+## Week 4: Human-in-the-Loop & API Wrapping
+- [ ] **FastAPI Integration**
+    - [ ] Wrap the LangGraph workflow in a FastAPI backend.
+- [ ] **Human-in-the-Loop (HITL)**
+    - [ ] Implement a workflow "pause" for manual human approval before finalization.
+    - [ ] Create an API endpoint to resume/approve the pending state.
+- [ ] **Final Delivery**
+    - [ ] Finalize the GitHub repository with a detailed architecture guide.
+    - [ ] Document the agent graph logic and state transitions in the README.
