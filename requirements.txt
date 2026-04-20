@@ -1,7 +1,5 @@
 langchain
-langchain-groq
-jupyter
-python-dotenv
+langchain-groq==0.0.1s
 fastapi==0.111.0
 uvicorn==0.29.0
 pydantic==2.7.1
