@@ -1,7 +1,7 @@
 ## \# Gen AI Internship: Technical Log 🚀
 
 > **Student:** Joel J George
-> **Major:** B.Tech AI & ML (Christ University)  
+> **Major:** B.Tech AI & ML (Christ University).
 > **Organization:** InfoTact Solutions
 
 -----
