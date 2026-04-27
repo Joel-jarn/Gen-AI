@@ -1,0 +1,13 @@
+# Agentic AI Document Reviewer - Task Checklist
+
+- [x] Assess current project status and existing writer/critic scripts.
+- [x] Implement LangGraph Orchestration ([agents/graph.py](file:///c:/Users/DELL/Desktop/Agentic%20AI/agents/graph.py))
+  - [x] Define the graph state (draft, feedback, iteration, review status).
+  - [x] Add `Writer` and [Critic](file:///c:/Users/DELL/Desktop/Agentic%20AI/backend/models.py#9-13) nodes.
+  - [x] Implement state routing logic (loop until critic approves or max iterations reached).
+- [ ] FastApi Integration ([backend/main.py](file:///c:/Users/DELL/Desktop/Agentic%20AI/backend/main.py) & `backend/routers`)
+  - [ ] Create `/review` POST endpoint to trigger the LangGraph workflow.
+  - [ ] Integrate Request and Response models from [models.py](file:///c:/Users/DELL/Desktop/Agentic%20AI/backend/models.py).
+- [ ] Verification
+  - [ ] Write integration test (e.g. [test_workflow.py](file:///c:/Users/DELL/Desktop/Agentic%20AI/test_workflow.py) or request via cURL) to verify the AI feedback loop.
+- [ ] Push to Github repository following branch-based development guidelines.
